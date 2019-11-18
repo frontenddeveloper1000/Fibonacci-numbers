@@ -1,0 +1,24 @@
+/* This program will help us print the first 100 numbers in the Fibonacci series. The Fibonacci numbers are very popular in mathematics.*/
+
+import java.util.ArrayList;
+class Main {
+ public static void main(String[] args) {
+
+
+  long []series
+= new long [99];
+
+// prints the first two elements in the series.
+series[0]=0;
+series[1]=1;
+
+//creates the Fibonacci series and stores it in an Array.
+
+for (int i=2; i<99; i++){
+series[i]= series[i-1]+series[i-2];
+}
+
+//prints the Fiboanacci series numbers.
+System.out.println("Fibonacci numbers upto 100");
+for (int i=0; i<99; i++)
+  {System.out.println(series[i]);}
